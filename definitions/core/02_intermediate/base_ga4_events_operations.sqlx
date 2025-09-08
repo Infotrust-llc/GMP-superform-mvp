@@ -12,9 +12,13 @@ config {
 js {
   // Require your helper functions.
   const helperFunctions = require("includes/helper_functions");
+<<<<<<< HEAD
   //const default_config = helperFunctions.getConfig();
 
   // Explicitly require the merged config from your config file.
+=======
+  const default_config = helperFunctions.getConfig();
+>>>>>>> refs/heads/refactor-update_Includes_folder
   const { mergedConfig } = require("includes/config");
   const config = {
     ...mergedConfig
